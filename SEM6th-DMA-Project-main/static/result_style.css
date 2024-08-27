@@ -1,0 +1,58 @@
+/* result_style.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("3.jpg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.text-container {
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-size: 26pt;
+  font-weight: bold;
+  border: 2px solid #f1f1f1;
+  width: 48%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.bg-text p {
+  font-size: 20pt;
+  color: #d2ccc9;
+}
+
+.image-container {
+  width: 50%;
+  padding-top: 30%; /* Adjust the aspect ratio as needed */
+  background-image: url("BMI.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 20px;
+}
+.text-container a {
+  color: white; /* Default text color */
+  text-decoration: none;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.text-container a:hover {
+  color: rgb(11, 0, 0); /* Text color on hover */
+  border: 2px solid rgb(5, 5, 5); /* White border on hover */
+  background-color: rgb(255, 253, 253);
+}
